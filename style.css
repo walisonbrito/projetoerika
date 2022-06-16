@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition-duration: 0.6s;
+}
+
+body
+{
+    min-height: 100vh;
+    background: #687282;
+ 
+}
+
+header
+{
+    position: absolute;
+    /* position:fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    z-index: 1000;
+   /* DEIXANDO O FINAL DA BARRA OPACO */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+    
+   text-rendering: optimizeLegibility;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   appearance: none;
+   -moz-appearance: none;
+   -webkit-appearance: none;
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
+    
+}
+header img
+{
+ width: 100px;
+   
+}
+header ul
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul li
+{
+    list-style: none;
+     
+}
+header ul li a
+{
+    text-decoration: none;
+    padding:  6px 9px;
+    margin-left: 10px;
+    color: black;
+    background-color:#FFF22D;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header ul li a:hover,
+header ul li a:hover.active
+{
+    background:#fff ;
+    color: black;
+}
+
+section
+{
+    position: relative; 
+    width: 100%;
+    height:96vh;
+  /* border:solid 1px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background-image: url(wallpaperbetter.com_1920x1080\ \(1\).jpg);
+    background-position: -10px 10px;
+    background-size: cover;
+    display: flex;
+}
+
+section p
+{
+    position: absolute;
+    width: 100%;
+    height: 173px;
+    top: 200px; 
+    text-align: center;
+    font-weight: 300;
+
+}
+
+section h1, p{
+    color: #FFF22D;
+}
+section h1{
+    position: absolute;
+    width: 100%;
+    height: 173px;
+    top: 150px; 
+    text-align: center;
+
+}
+
+div 
+{
+    height: 80vh;
+    background: rgb(16,17,22);
+    background: linear-gradient(90deg, rgba(16,17,22,1) 21%, rgba(0,0,0,0.7539390756302521) 67%);
+}
+
+/* CARDS DE VENDA */
+
+.cards
+{
+    padding: 50px 30px;
+}
+.cards h1
+{
+    color: #FFF22D;
+    text-align: center;
+    margin-top:-40px;
+    margin-bottom: 45px;
+}
+.card
+{
+    width: 12rem;
+    height: 50vh; 
+    margin-left:100px;
+     float: left;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.card img{
+    width: 150px;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.card h5
+{
+text-align: center;
+font-size: 18px;
+color: #fff;
+text-transform: uppercase;
+}
+
+.card p
+{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.card a 
+{
+    background-color: #FFF22D;
+    border:50px;
+    border-radius: 16px;
+    align-items: center;
+    text-align: center;
+    margin-left: 18%;
+     list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;  
+ }
+
+ .card a:hover
+ {
+background-color: #687282;
+color: #FFF22D;
+ }
+
+ .batmovel
+ {
+     height: 80vh;
+ }
+ .batmovel h1
+ {
+    color: #FFF22D;
+    text-align: center;
+    margin-top:-90x;
+    margin-bottom:10px;
+ }
+
+  /* BAT-MÓVEIS */
+ .batmovel img{
+     width: 200px;
+     align-items: center;
+     margin-left: 15%;
+    margin-top: 50px;
+    cursor: pointer;
+
+ }
+.batmovel img:hover
+{
+     background: rgba(255, 255, 255, 0.2);
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* hr
+{
+} */
+footer
+{
+    color: #FFF22D;
+    text-align: center;
+    height:5vh;        
+    background: rgb(16,17,22);
+    background: linear-gradient(90deg, rgba(16,17,22,1) 21%, rgba(0,0,0,0.7539390756302521) 67%);
+}
